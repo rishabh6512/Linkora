@@ -23,8 +23,6 @@ const Post = ({ post }: { post: IPostDocument }) => {
                 <div className='flex items-center justify-between w-full'>
                     <div>
                         <h1 className='text-sm font-bold'>{fullName} <Badge variant={'secondary'} className='ml-2'>You</Badge></h1>
-                        <p className='text-xs text-gray-500'>@{user ? user?.username : "username"}</p>
-
                         <p className='text-xs text-gray-500'>
                             <ReactTimeago date={new Date(post.createdAt)} />
                         </p>
